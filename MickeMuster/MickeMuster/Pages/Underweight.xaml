@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MickeMuster.Underweight">
+    <ContentPage.Content>
+        <StackLayout>
+            <Label  Text="Vaš BMI je:" TextColor="Black" FontSize="Large" VerticalTextAlignment="Center" HorizontalTextAlignment="Center"/>
+            <Label x:Name="test" Text="" TextColor="#590410"  FontSize="Large" VerticalTextAlignment="Center" HorizontalTextAlignment="Center"/>
+            <Label Text="Vi se smatrate mršavim sa BMI-om ispod 18" VerticalTextAlignment="Center" HorizontalTextAlignment="Center" FontSize="Medium" />
+            <Image Source="https://i.gyazo.com/567b234ce348576d4a13da61fdbce435.png" WidthRequest="400" HeightRequest="200"/>
+            <Label Text="Vaša kilaža je ispod zdravog dometa BMI. Pogledajte naš detaljni opis specifično napravljen za Vaš tip tijela." VerticalTextAlignment="Center" HorizontalTextAlignment="Center" FontSize="Medium" Margin="0, 10, 0, 0" />
+            <Button BackgroundColor="#1175f0" TextColor="White"  Text="Diet plan" Clicked="Button_Clicked" CornerRadius="10" Margin="80, 25, 80, 15"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

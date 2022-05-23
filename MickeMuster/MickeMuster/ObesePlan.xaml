@@ -1,0 +1,76 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MickeMuster.ObesePlan">
+    <ContentPage.Content>
+        <StackLayout>
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                </Grid.ColumnDefinitions>
+                <Label Grid.Column="0" Text="Vaša visina: " FontSize="Medium"  HorizontalOptions="Center"
+               VerticalOptions="Center" Margin="20, 10, 0, 0" TextColor="black" />
+                <Label Grid.Column="1" x:Name="visina"  HorizontalOptions="Center" Margin="0, 10, 20, 0"
+               VerticalOptions="Center"  FontSize="Medium"  Text="visina" />
+                <Label Grid.Row="1" Grid.Column="0" Text="Vaša težina: " FontSize="Medium"  HorizontalOptions="Center"
+               VerticalOptions="Center" Margin="20, 10, 0, 0" TextColor="black" />
+                <Label Grid.Row="1" Grid.Column="1" x:Name="tezina"  HorizontalOptions="Center" Margin="0, 10, 20, 0"
+               VerticalOptions="Center"  FontSize="Medium"  Text="tezina" />
+                <Label Grid.Row="2" Grid.Column="0" Text="Vaš BMI: " FontSize="Medium"  HorizontalOptions="Center"
+               VerticalOptions="Center" Margin="20, 10, 0, 0" TextColor="black" />
+                <Label Grid.Row="2" Grid.Column="1" x:Name="bmi"  HorizontalOptions="Center" Margin="0, 10, 20, 0"
+               VerticalOptions="Center"  FontSize="Medium"  Text="bmi" />
+            </Grid>
+ 
+            <BoxView   HeightRequest="1"
+                   Color="#bfb8b8"
+                  />
+            <Label x:Name="promijena" Text="Da bi smo izračunali Vaš potrebni dnevni unos kalorija i koliko bi kalorija trebali unositi da bi ste izgubili višak kilograma, potvrdite Vaše fizičke aktivnosti:" VerticalTextAlignment="Center" HorizontalTextAlignment="Center" FontSize="Medium" />
+            <Picker x:Name="picker" 
+        Title="Nivo aktivnosti"
+                Margin="20, 10, 20 ,0"
+        TitleColor="Black">
+                <Picker.ItemsSource>
+                    <x:Array Type="{x:Type x:String}">
+                        <x:String>Minimalna aktivnost</x:String>
+                        <x:String>Vježbate 1-3 puta sedmično</x:String>
+                        <x:String>Vježbate 4-5 puta sedmično</x:String>
+                        <x:String>Vrlo intenzivno svakodnevno vježbanje ili fizički posao</x:String>
+                    </x:Array>
+                </Picker.ItemsSource>
+            </Picker>
+            <Button Grid.Column="0" BorderColor="#1175f0" BorderWidth="1" BackgroundColor="#1175f0" TextColor="AntiqueWhite" Text="Izračunaj" CornerRadius="15" Margin="3" Clicked="Button_Clicked"/>
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                </Grid.ColumnDefinitions>
+                <Label x:Name="lbl1" Grid.Column="0" Text="Kalorije za održavanje trenutne mase:" FontSize="Medium" IsVisible="false"
+               VerticalOptions="Center" Margin="20, 10, 0, 0" TextColor="black" />
+                <Label Grid.Column="1" x:Name="odrzavanje"  HorizontalOptions="Center" Margin="0, 10, 20, 0" TextColor="#590410" IsVisible="false"
+               VerticalOptions="Center"  FontSize="Medium"  Text="visina" />
+                <Label x:Name="lbl2" Grid.Row="1" Grid.Column="0" Text="Kalorije za mršavljenje (0.5kg-1kg sedmično):" FontSize="Medium"   IsVisible="false"
+               VerticalOptions="Center" Margin="20, 10, 0, 0" TextColor="black" />
+                <Label Grid.Row="1" Grid.Column="1" x:Name="gubitak"  HorizontalOptions="Center" Margin="0, 10, 20, 0" TextColor="#590410" IsVisible="false"
+               VerticalOptions="Center"  FontSize="Medium"  Text="tezina" />
+                <Label x:Name="lbl3" Grid.Row="2" Grid.Column="0" Text="Kalorije za debljanje: " FontSize="Medium"  IsVisible="false"
+               VerticalOptions="Center" Margin="20, 10, 0, 0" TextColor="black" />
+                <Label Grid.Row="2" Grid.Column="1" x:Name="debljanje"  HorizontalOptions="Center" Margin="0, 10, 20, 0" TextColor="#590410" IsVisible="false"
+               VerticalOptions="Center"  FontSize="Medium"  Text="bmi" />
+            </Grid>
+            <Label Padding="5" x:Name="poruka"  HorizontalOptions="Center" Margin="0, 10, 10, 0" TextColor="#590410" IsVisible="false"
+               VerticalOptions="Center"  FontSize="Medium"  Text="Spori gubitak kilaže je zdraviji od naglog. Pokušajte jesti više proteina, zamijenite čokolade sa voćem i polako izbacite brzu hranu iz Vaše dijete. " />
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

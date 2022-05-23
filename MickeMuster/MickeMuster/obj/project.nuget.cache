@@ -1,0 +1,14 @@
+{
+  "version": 2,
+  "dgSpecHash": "3KhX0bxK8qVpYiVpWHtjXx1yZnUyNb4Kba2L98KIQevMnBuB2JQM/k5TebEFjDOd972Vo32a6N40nxcOHB5Uqg==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\korisnik\\Desktop\\PROJECTS FOR GITHUB\\BMI kalkulator - Xamarin Mobile app\\MickeMuster\\MickeMuster\\MickeMuster.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\korisnik\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
+    "C:\\Users\\korisnik\\.nuget\\packages\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512",
+    "C:\\Users\\korisnik\\.nuget\\packages\\system.numerics.vectors\\4.5.0\\system.numerics.vectors.4.5.0.nupkg.sha512",
+    "C:\\Users\\korisnik\\.nuget\\packages\\xamarin.essentials\\1.6.0\\xamarin.essentials.1.6.0.nupkg.sha512",
+    "C:\\Microsoft\\Xamarin\\NuGet\\xamarin.forms\\4.8.0.1451\\xamarin.forms.4.8.0.1451.nupkg.sha512"
+  ],
+  "logs": []
+}

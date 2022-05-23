@@ -1,0 +1,12 @@
+{
+  "version": 2,
+  "dgSpecHash": "k2VdTljrMwd32oRCUGlxZ35JDIAF4dAYrRuflVq9PbPADq3DqReg5FNrMipIZWxHCz2ExVIxCzDMV7bkOF85jQ==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\korisnik\\Desktop\\PROJECTS FOR GITHUB\\BMI kalkulator - Xamarin Mobile app\\MickeMuster\\MickeMuster.iOS\\MickeMuster.iOS.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\korisnik\\.nuget\\packages\\system.numerics.vectors\\4.5.0\\system.numerics.vectors.4.5.0.nupkg.sha512",
+    "C:\\Users\\korisnik\\.nuget\\packages\\xamarin.essentials\\1.6.0\\xamarin.essentials.1.6.0.nupkg.sha512",
+    "C:\\Microsoft\\Xamarin\\NuGet\\xamarin.forms\\4.8.0.1451\\xamarin.forms.4.8.0.1451.nupkg.sha512"
+  ],
+  "logs": []
+}
